@@ -17,7 +17,7 @@
 
 ---
 
-## 🛠 Технологічний стек
+## Технологічний стек
 - **Framework:** Electron
 - **Runtime:** Node.js (v24.13.1)
 - **Frontend:** HTML5, CSS3 (Flexbox Layout)
