@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Professional Survey: Electron</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Анкета студента</h1>
+
+        <form id="surveyForm">
+            <label>1. Ваше ім'я:</label>
+            <input type="text" id="txtName" required>
+
+            <label>2. Ваш вік:</label>
+            <input type="number" id="numAge" min="16" max="100" value="18">
+
+            <label>3. Звідки дізналися про нас?</label>
+            <select id="cmbSource">
+                <option>Соцмережі</option>
+                <option>Від друзів</option>
+                <option>Реклама</option>
+            </select>
+
+            <div class="group">
+
+                <label>4. Оцінка навчання (1-5):</label>
+                <div class="rating-row">
+                    <label class="radio-item"><input type="radio" name="rating" value="1"> 1</label>
+                    <label class="radio-item"><input type="radio" name="rating" value="2"> 2</label>
+                    <label class="radio-item"><input type="radio" name="rating" value="3" checked> 3</label>
+                    <label class="radio-item"><input type="radio" name="rating" value="4"> 4</label>
+                    <label class="radio-item"><input type="radio" name="rating" value="5"> 5</label>
+                </div>
+            </div>
+
+            <div class="group">
+                <label>5. Цікаві модулі:</label>
+                <div class="checkbox-row">
+                    <label class="check-item"><input type="checkbox" value="JavaScript"> JavaScript</label>
+                    <label class="check-item"><input type="checkbox" value="Node.js"> Node.js</label>
+                    <label class="check-item"><input type="checkbox" value="Electron"> Electron</label>
+                </div>
+            </div>
+
+            <label>6. Побажання:</label>
+            <textarea id="txtComments" rows="4"></textarea>
+
+            <button type="submit" id="btnSave">Зберегти відповідь</button>
+        </form>
+    </div>
+    <script src="renderer.js"></script>
+</body>
+
+</html>

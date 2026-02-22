@@ -1,0 +1,4 @@
+node_modules/
+dist/
+survey_electron.txt
+.DS_Store

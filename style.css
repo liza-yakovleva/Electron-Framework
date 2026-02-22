@@ -1,0 +1,75 @@
+body {
+    background: #1e1e2e;
+    color: #cdd6f4;
+    font-family: 'Segoe UI', sans-serif;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+.container {
+    width: 100%;
+    max-width: 450px;
+    background: #313244;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+h1 { text-align: center; color: #89b4fa; }
+label { display: block; margin-top: 15px; font-weight: bold; }
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    background: #45475a;
+    border: 1px solid #585b70;
+    color: white;
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+button {
+    width: 100%;
+    margin-top: 25px;
+    padding: 12px;
+    background: #89b4fa;
+    border: none;
+    color: #1e1e2e;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+button:hover { background: #b4befe; }
+.group { margin-top: 15px; border-top: 1px solid #585b70; padding-top: 10px; }
+.check { font-weight: normal; font-size: 0.9em; }
+
+/* Контейнери для рядків */
+.rating-row, .checkbox-row {
+    display: flex;
+    justify-content: space-between; /* Рівномірно розподіляє елементи */
+    margin-top: 10px;
+    background: #45475a;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+/* Стиль для кожного окремого елемента (текст + кнопка) */
+.radio-item, .check-item {
+    display: flex;
+    align-items: center; /* Центрує текст і кнопку по вертикалі */
+    cursor: pointer;
+    font-size: 14px;
+    color: #cdd6f4;
+    margin-top: 0 !important; /* Прибираємо відступ зверху, якщо він був */
+}
+
+/* Відступи між кнопкою та текстом */
+.radio-item input, .check-item input {
+    margin-right: 8px;
+    cursor: pointer;
+    width: auto; /* Щоб кнопки не розтягувалися */
+}
+
+/* Додатково: ефект при наведенні */
+.radio-item:hover, .check-item:hover {
+    color: #89b4fa;
+}
